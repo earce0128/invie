@@ -1,0 +1,277 @@
+/*tipo de selector {
+	propiedad: valor;
+	propiedad-2: valor;
+}*/
+
+/** {
+	/*Colocando los lados que son diferentes 
+	especificando cada uno
+	padding-top: 10px;
+	padding-right: 13px;
+	padding-bottom: 5px;
+	padding-left: 15px;
+	Colocando todos los lados si son diferentes
+	con una sola instrucción
+	padding: 10px 13px 5px 15px
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid red;
+}*/
+
+body {
+	font-family: 'Allerta', sans-serif;
+	margin: 0;
+}
+
+table {
+	width: 100%; /*Para que tomo el ancho del padre*/
+}
+
+th {
+	background: #273b47;
+	color: white;
+	padding: 20px;
+	text-align: left;
+}
+
+td {
+	padding: 20px;
+}
+
+table, td, th {
+	border: 1px solid #273b47;
+	border-collapse: collapse;
+}
+
+input, textarea {
+	outline: 0;
+}
+
+/*Se puede usar esta propiedad para cambiar el 
+efecto en el focus en este caso background*/
+input:focus, textarea:focus {
+	background: lightgray;
+}
+
+.contenedor {
+	width: 800px;
+	margin: auto; /*auto se usa para centrado del bloque*/
+	position: relative;
+}
+
+.background {
+	background-image: url('../images/background.png');
+	background-size: cover;
+}
+
+.button {
+	border-style: none;
+	border-radius: 12px;
+	color: white;
+	padding: 7px 12px;
+	/*Coloca un cursor sobre el boton*/
+	cursor: pointer;
+	text-decoration: none;
+	font-size: 18px;
+	background: #fd324e;
+	/*Degradado de colores*/
+	background: linear-gradient(to left, #fe344e, #ff7250)
+	
+	/*Editor de gradiente generico*/
+	/* Permalink - use to edit and share this gradient: 
+	http://colorzilla.com/gradient-editor/#f3c5bd+0,e86c57+50,ea2803+51,ff6600+75,c72200+100;Red+Gloss */
+	/*background: #f3c5bd; /* Old browsers */
+	/*background: -moz-linear-gradient(-45deg, #f3c5bd 0%, #e86c57 50%, #ea2803 51%, #ff6600 75%, #c72200 100%); /* FF3.6-15 */
+	/*background: -webkit-linear-gradient(-45deg, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* Chrome10-25,Safari5.1-6 */
+	/*background: linear-gradient(135deg, #f3c5bd 0%,#e86c57 50%,#ea2803 51%,#ff6600 75%,#c72200 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3c5bd', endColorstr='#c72200',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 70px;
+	margin-bottom: 0;
+	margin-top: 70px;
+	/*border: 2px solid red;*/
+}
+
+.titulo span {
+	text-decoration: underline;
+}
+
+.title-a {
+	font-size: 24px;
+	margin-top: 0;
+	/*border: 2px solid peru;*/
+}
+
+.title-b {
+	font-size: 50px;
+	margin-bottom: 20px;
+	/*border: 2px solid peru;*/
+}
+
+.guitarras {
+	color: #1F313C;
+	margin-bottom: 60px;
+}
+
+.guitarras h2 {
+	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.portada {
+	color: white;
+	padding: 20px;
+	height: 500px;
+}
+
+.portada button {
+	margin-bottom: 70px;
+	/*border: 2px solid blue;*/
+}
+
+.menu {
+	font-size: 24px;
+	display: inline-block;
+	/*border: 2px solid green;*/
+	position: absolute;
+	right: 0;
+}
+
+.menu li:before {
+	content: '∘';
+	font-size: 30px;
+	color: white;
+}
+
+.menu li {
+	display: inline-block;
+	margin-left: 30px;
+}
+
+.menu a {
+	color: white;
+	text-decoration: none;
+}
+
+.logotipo {
+	display: inline-block;
+	margin-left: 0;
+}
+
+.guitarra {
+	margin: 10px 10px 40px 10px;
+	padding: 10px;
+	/*overflow: hidden;*/
+	border: 1px solid #1F313C;
+	border-radius: 8px;
+}
+
+.derecha {
+	float: right;
+	position: relative;
+	top: -127px;
+}
+
+.izquierda {
+	float: left;
+	position: relative;
+}
+
+.guitarra ol {
+	padding: 0;
+}
+
+.guitarra.b {
+	height: 190px;
+}
+
+.contenedor-guitarra-a {
+	padding-left: 20px;
+}
+
+.contenedor-guitarra-b {
+	margin-left: 370px;
+	padding-left: 20px;
+	position: relative;
+	bottom: 90px;
+}
+
+.header {
+	position: relative;
+}
+
+.footer {
+	background: #273b47;
+	padding: 50px 10px;
+}
+
+.contenedor img {
+	display: block;
+}
+
+.contacto {
+	display: flex;
+	width: 300px;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.contacto strong {
+	display: block;
+}
+
+.contacto a {
+	color: white;
+	text-decoration: none;
+	margin: 10px 10px 10px 0;
+}
+
+.footer .contenedor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.formulario {
+	display: flex;
+	width: 400px;
+	color: white;
+}
+
+.formulario label, .sexo, .intereses {
+	margin-bottom: 10px;
+}
+
+/*Esta notación es para poner propiedades en 
+dos clases al mismo tiempo.*/
+.col1, .col2 {
+	display: flex;
+	flex-direction: column;
+}
+
+.col1 {
+	margin-right: 10px;
+}
+
+.col2 {
+	align-items: flex-start;
+}
+
+.col2 .button {
+	margin-top: 15px;
+}
+
+.intereses label {
+	font-size: 10px;
+}
+
+.sexo {
+	margin-top: 10px;
+}
+
+.tabla {
+	margin: 50px 0;
+}
+

@@ -1,0 +1,46 @@
+/*tipo de selector {
+	propiedad: valor;
+	propiedad-2: valor;
+}*/
+
+/*Tipo de selector universal. Se aplica a toda la página WE*/
+* {
+	border: 1px solid red;
+	margin:	10px;
+}
+
+/*Selector de etiqueta*/
+header {
+	background: blue;
+}
+
+section {
+	background: purple;
+}
+
+/*Selector descendente*/
+article h3 {
+	color: green;
+}
+
+/*selectores de clase*/
+.title-a {
+	background: yellow;
+}
+
+.title-b {
+	background: salmon;
+ }
+
+ /*selector de id*/
+ #header {
+ 	border: 3px solid black;
+ }
+
+ #portada {
+ 	border: 3px solid orange;
+ }
+
+ #guitarras {
+	border: 3px solid brown;
+ }
